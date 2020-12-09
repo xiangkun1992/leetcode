@@ -19,21 +19,27 @@ public class TwoSumTest {
     public void testTwoSum1() {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        Assert.assertEquals(Arrays.toString(new int[]{0, 1}), Arrays.toString(twoSum.twoSum(nums, target)));
+        String expected = Arrays.toString(new int[]{0, 1});
+        String actual = Arrays.toString(twoSum.twoSum(nums, target));
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testTwoSum2() {
         int[] nums = {11, 2, 7, 15};
         int target = 9;
-        Assert.assertEquals(Arrays.toString(new int[]{1, 2}), Arrays.toString(twoSum.twoSum(nums, target)));
+        String expected = Arrays.toString(new int[]{1, 2});
+        String actual = Arrays.toString(twoSum.twoSum(nums, target));
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testTwoSum3() {
         int[] nums = {11, 15, 2, 7};
         int target = 9;
-        Assert.assertEquals(Arrays.toString(new int[]{2, 3}), Arrays.toString(twoSum.twoSum(nums, target)));
+        String expected = Arrays.toString(new int[]{2, 3});
+        String actual = Arrays.toString(twoSum.twoSum(nums, target));
+        Assert.assertEquals(expected, actual);
     }
 
 }
