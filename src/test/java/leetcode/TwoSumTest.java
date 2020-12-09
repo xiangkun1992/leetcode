@@ -1,14 +1,16 @@
 package leetcode;
 
-import junit.framework.TestCase;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Arrays;
 
-public class TwoSumTest extends TestCase {
+public class TwoSumTest {
 
+    @Test
     public void testTwoSum() {
-        int[] nums = {2,7,11,15};
+        int[] nums = {2, 7, 11, 15};
         int target = 9;
-        assertEquals(Arrays.toString(new int[]{0, 1}), Arrays.toString(new TwoSum().twoSum(nums, target)));
+        Assert.assertEquals(Arrays.toString(new int[]{0, 1}), Arrays.toString(new TwoSum().twoSum(nums, target)));
     }
 }
