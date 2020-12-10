@@ -9,16 +9,15 @@ public class Solution9 {
         if (x < 0 || (x != 0 && x % 10 == 0)) {
             return false;
         }
-        return x == cover(x);
+
+        int a = 0;
+        while (x > a) {
+            int b = x % 10;
+            a = a * 10 + b;
+            x = x / 10;
+        }
+
+        return x == a || x == a / 10;
     }
 
-    private int cover(int num) {
-        int a = 0;
-        while (num != 0) {
-            int b = num % 10;
-            a = a * 10 + b;
-            num = num / 10;
-        }
-        return a;
-    }
 }
